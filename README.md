@@ -148,8 +148,7 @@ http://localhost:8000
 ### Authors
 👤 **Anoop Morya**
 
-- GitHub: [@aliatayee](https://github.com/aliatayee)
-- Twitter: [@aqaatayee](https://twitter.com/aqaatayee)
+- GitHub: [@Anoopdata](https://github.com/Anoopdata)
 
 
 ## 🤝 Contributing
