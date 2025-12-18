@@ -45,7 +45,7 @@ To setup and install Attendance Management System project, follow the below step
 - Clone this project by the command: 
 
 ```
-$ git clone https://github.com/aliatayee/Attendance_Management_System
+$ git clone https://github.com/Anoopdata/Precision-Hiring-Through-Large-Language-Models.git
 ```
 
 - Then switch to the project folder by the bellow query:
