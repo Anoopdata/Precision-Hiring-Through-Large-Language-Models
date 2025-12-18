@@ -1,11 +1,14 @@
 
 <p align="center"><a target="_blank"><h1>Precision Hiring Through Large Language Models</h1></a></p>
 
+## About Precision Hiring Through Large Language Models 
+
+
 What if an application could analyze resumes and instantly decide a candidate’s suitability for a role? Many MNCs and Tier-2 companies already use AI to streamline hiring. For beginners in Generative AI, building a resume screening application is a great way to learn hands-on while understanding AI-driven candidate shortlisting.
 
 
 
-## About Attendance Management System
+ Attendance Management System
 
 Attendance Management System is a web application based on Laravel which keeps track of employee hours. It is the system you use to document the time your employees work and the time they take off.
 
