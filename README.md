@@ -18,16 +18,17 @@ Attendance Management System is a web application based on Laravel which keeps t
 - Opeai
 - prompts
 - chainlit
-- python
+- Python 3.13.5
+- Ubuntu 22.04
 
   
 ##System Design
 
 
 A clearly defined system architecture must be established prior to development to support scalability, maintainability, and overall system efficiency.
+
+
 ![Chainlit UI Demo](chainlit_UI/documents/1_IHummN0XF1K72_PxLbYE4g.webp)
-
-
 
 
 
@@ -53,35 +54,86 @@ $ git clone https://github.com/aliatayee/Attendance_Management_System
 $ cd Attendance_Management_System
 ```
 
-- Then open ```env``` file and update database credentials.
+- Option 1: Install via Deadsnakes PPA (Quickest)
+The standard Ubuntu repositories don't always have the latest Python. The Deadsnakes PPA is the community standard for newer versions.
 
-- Then run the below command to install composer dependencies
+1. Update and install dependencies:
+```
+sudo apt update
+sudo apt install software-properties-common -y
+```
+2. Add the repository and install Python 3.13:
+``` 
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.13 python3.13-venv python3.13-dev -y
+```
+3. Verify installation:
+``` 
+   python3.13 --version
+```
+Setting Up Your Project Environment
+ 
+Once Python 3.13.5 is installed, you need to create an isolated environment for the Resume Shortlisting app.
+
+1. Create a Project Folder
+```
+mkdir resume-screening-ai && cd resume-screening-ai
 
 ```
-$ composer install
+2. Initialize Virtual Environment
+Using the Python version you just installed:
 ```
-
-- Then run the below command to install dependencies
-
+python3.13 -m venv venv
+source venv/bin/activate
 ```
-$ npm i
+3. Install Project Dependencies
+Now, install the libraries mentioned in your project snippet:
 ```
-- Then run the below command to migrate the tables.
-
-```
-$ php artisan migrate 
-```
-- Then run the below command to run seeder.
+pip install flask flask-restx werkzeug langchain_community \
+langchain_core langchain_groq langchain_openai python-dotenv \
+pypdf
 
 ```
-$ php artisan db:seed 
+
+4. Setup Environment Variables
+Create a .env file in your project root to securely store your API keys:
 ```
 
-- Finally, run the below command to start the project.
+touch .env
+```
+
+Inside .env, add:
+```
+GROQ_API_KEY=your_groq_key_here
+OPENAI_API_KEY=your_openai_key_here
+gmail_password=your_app_password_here
+```
+
+Verifying the Setup
+You can run a quick check to ensure the LLM chain can initialize:
+
+# check_env.py
 
 ```
-$ php artisan serve
+import flask
+import langchain
+print(f"Flask version: {flask.__version__}")
+print("Environment is ready for the Resume Shortlister!")
+
 ```
+**run the code **
+```
+chainlit run app.py -w
+```
+
+open chrome using url 
+
+
+http://localhost:8000
+
+
+
 
 ## Screenshots
 ![1](https://user-images.githubusercontent.com/74867463/144262662-b7fbe66e-5c4c-46fb-8bab-9cf3121c2032.png)
@@ -90,11 +142,7 @@ $ php artisan serve
 ![4](https://user-images.githubusercontent.com/74867463/144262645-29d4bfa4-c737-4123-8c22-c8c1fd49477e.png)
 
 
-### Prerequisites
-- PHP installed
-- Composer installed
-- IDE to edit and run the code (We use Visual Studio Code 🔥).
-- Git to versionning your work.
+
 
 ### Authors
 👤 **Ali**
