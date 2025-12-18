@@ -51,7 +51,7 @@ $ git clone https://github.com/Anoopdata/Precision-Hiring-Through-Large-Language
 - Then switch to the project folder by the bellow query:
 
 ```
-$ cd Attendance_Management_System
+$ cd Precision-Hiring-Through-Large-Language-Models/chainlit_UI
 ```
 
 - Option 1: Install via Deadsnakes PPA (Quickest)
