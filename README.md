@@ -32,10 +32,6 @@ A clearly defined system architecture must be established prior to development t
 ## Demo
 <a href="http://ams.alihost.co">Demo link</a> 
 
-  ### Admin credential
-    username:ali@aliatayee.com
-    password:ali123
-
 
 ### Install & Setup
 
