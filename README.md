@@ -20,6 +20,15 @@ Attendance Management System is a web application based on Laravel which keeps t
 - chainlit
 - python
 
+  
+##System Design
+A clearly defined system architecture must be established prior to development to support scalability, maintainability, and overall system efficiency.
+
+
+
+
+
+
 ## Demo
 <a href="http://ams.alihost.co">Demo link</a> 
 
