@@ -30,7 +30,8 @@ A clearly defined system architecture must be established prior to development t
 
 
 ## Demo
-<a href="http://ams.alihost.co">Demo link</a> 
+![Chainlit UI Demo](chainlit_UI/documents/chainlit_UI.jpg)
+
 
 
 ### Install & Setup
