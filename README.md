@@ -37,7 +37,11 @@ A clearly defined system architecture must be established prior to development t
 ## Demo
 ![Chainlit UI Demo](chainlit_UI/documents/chainlit_UI.jpg)
 
-
+##Install Required Packages
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
 ### Install & Setup
 
