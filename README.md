@@ -22,6 +22,8 @@ Attendance Management System is a web application based on Laravel which keeps t
 
   
 ##System Design
+
+
 A clearly defined system architecture must be established prior to development to support scalability, maintainability, and overall system efficiency.
 ![Chainlit UI Demo](chainlit_UI/documents/1_IHummN0XF1K72_PxLbYE4g.webp)
 
